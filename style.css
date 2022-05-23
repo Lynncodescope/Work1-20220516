@@ -1,0 +1,245 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.body{
+	font-family: PingFang TC ;
+}
+*, *:before, *:after{
+	box-sizing: border-box;
+	}
+
+.wrap{
+    width: 940px;
+    margin: 0 auto;
+}
+.header{
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px ;
+	margin-bottom: 30px;
+}
+.logo a img{
+	width: 100%;
+	height: 40px;
+}
+.menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu ul{
+	display: flex;
+	justify-content: space-between;
+	width: 215px;
+	height: 22px;
+}
+.menu ul a{
+	text-decoration: none;
+	display: block;
+	line-height: 22px;
+	color: #3F5D45;
+
+}
+.cart{
+	padding-left: 79px;
+}
+.banner{
+	margin-bottom: 30px;
+}
+.main{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+}
+.itemlist{
+	width: 300px;
+}
+.itemlist ul{
+	height: 65px;
+	font-size: 24px;
+	text-align: center;
+	line-height: 65px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.itemlist h2{
+	background: #3F5D45;
+	color: #EAF0ED;
+	
+}
+.title{
+	background: #EAF0ED;
+	border: 1px solid #EAF0ED;
+}
+.itemlist a{
+	display: block;
+	color: #3F5D45;
+	text-decoration: none;
+}
+.productlist{
+	display: flex;
+	flex-wrap: wrap;
+	width: 640px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card{
+	width: 320px;
+    padding-left: 20px;
+	padding-bottom: 20px;
+	position: relative;
+}
+.img{
+	position: absolute;
+	z-index: 2;
+}
+.likebutton{
+	width: 20px;
+	height: 18.35px;
+	position: absolute;
+	top: 19px;
+	right: 22px;
+	z-index: 5;
+}
+.mark{
+    position: absolute;
+	top: 0px;
+	left: 40px;
+	z-index: 5;
+}
+
+.frame{
+    width: 36px;
+    height: 106.73px;
+    background: #3F5D45;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+  }
+  .frame p{
+    width: 16px;
+    height: 87.4px;
+    color:#EAF0ED;
+    line-height: 20px;
+  }
+
+.information{
+	display: flex;
+	justify-content: space-between;
+	font-size: 20px;
+	text-align: center;
+	color: #3F5D45;
+	height: 56px;
+	align-items: center;
+}
+p{
+	width: 173px;
+}
+.price{
+	width: 127px;
+}
+.button a{
+	display: block;
+	height: 65px;
+	font-size: 24px;
+	color: #3F5D45;
+	background: #EAF0ED;
+	border: 1px solid #EAF0ED;
+	text-align: center;
+	line-height: 65px;
+	text-decoration: none;
+}
+
+.pagination {
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.pagination ul{
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+.pagination ul a{
+    display: block;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.pagination .A{
+    order:0;
+}
+.pagination .B{
+    order:5;
+}
+.pagination .C{
+    order:1;
+
+}
+.pagination .D{
+    order:2;
+}
+.pagination .E{
+    order:3;
+}
+.pagination .C a{
+    color: #EAF0ED;
+    background: #3F5D45;
+    border: 1px solid #3F5D45;
+}
+.pagination .A a, .pagination .B a, .pagination .D a, .pagination .E a{
+    border: 1px solid #EAF0ED;
+}
+.pagination .D a, .pagination .E a{
+    color: #3F5D45;
+}
